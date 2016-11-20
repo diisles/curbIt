@@ -1,0 +1,75 @@
+
+<ion-header-bar class="bar-stable">
+  <h1 class="title">Signup</h1>
+</ion-header-bar>
+
+<ion-view view-title="member-SignUp">
+  <ion-content>
+    <!-- <ion-radio ng-model="choice" ng-value="'A'">Sign-Up as a Member</ion-radio>
+<ion-radio ng-model="choice" ng-value="'B'">Sign-Up as a Driver</ion-radio> -->
+    <form action="" ng-submit="addUser()"><br>
+      <div class="list">
+        <label class="item item-input">
+          <span class="input-label">Username: </span>
+          <input type="text" ng-model="userForm.username">
+        </label>
+
+        <label class="item item-input">
+          <span class="input-label">Email: </span>
+          <input type="text" ng-model="userForm.email">
+        </label>
+
+        <label class="item item-input">
+          <span class="input-label">Password: </span>
+          <input type="text" ng-model="userForm.password">
+        </label>
+
+        <label class="item item-input">
+          <span class="input-label">Phone Number: </span>
+          <input type="text" ng-model="userForm.tel">
+        </label>
+        <!-- <label class="item item-input">
+          <span class="input-label">Phone Number: </span>
+          <input type="text" ng-model="userForm.number">
+        </label>
+        <label class="item item-input">
+          <span class="input-label">Home Adress: </span>
+          <input type="text" ng-model="userForm.item">
+        </label>
+        <label class="item item-input">
+          <span class="input-label">Work Adress: </span>
+          <input type="text" ng-model="userForm.item">
+        </label>
+        <label class="item item-input">
+          <span class="input-label" placeholder='make/model/year/color'>Vehicle: </span>
+          <input type="text" ng-model="userForm.item">
+        </label>
+        <label class="item item-input">
+          <span class="input-label">license Plate Number: </span>
+          <input type="text" ng-model="userForm.item">
+        </label>
+        <label class="item item-input">
+          <span class="input-label">Register: </span>
+          <input type="text" ng-model="userForm.item">
+        </label> -->
+
+        <label class="item item-input">
+          <span class="input-label">Vehicle Make: </span>
+          <input type="text" ng-model="userForm.vehicle.make">
+        </label>
+
+        <label class="item item-input">
+          <span class="input-label">Vehicle Color: </span>
+          <input type="text" ng-model="userForm.vehicle.color">
+        </label>
+
+        <label class="item item-input">
+          <span class="input-label">License Plate: </span>
+          <input type="text" ng-model="userForm.vehicle.licensePlate">
+        </label>
+
+        <button type="submit" class="button button-block button-positive"> Sign Up</button>
+      </div>
+    </form>
+  </ion-content>
+</ion-view>
